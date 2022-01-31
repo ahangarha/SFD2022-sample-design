@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,800&family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+  --primary: #272a31;
+  --secondary: #ec5242;
+  --nutral: #d3d3d3;
+  --text-color: #5b5b5b;
+  --sans-font: "Kanit", "sans-serif";
+  --serif-font: "Lato", "serif";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--serif-font);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--sans-font);
+  line-height: 1em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary);
+}
+
+header #menu-toggler {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header #menu-toggler svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  background-color: #f7f7f7;
+}
+
+#hero h1,
+#hero h2 {
+  color: var(--secondary)
+}
+
+#hero h2 {
+  order: -1;
+  font-weight: 300;
+}
+
+#hero .description {
+  border: 0.25rem solid white;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+#hero h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#hero .location {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
