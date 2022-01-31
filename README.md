@@ -14,6 +14,10 @@ Sample Design of Imaginaty Software Freedom Day 2022 event
 
 This is a simple static website made with HTML5, CSS3 and JavaScript. There is not specific requirements for building the project.
 
+## Development
+
+In order to check linters locally, run `npm install` to get required packages and then run `npm run linter` to run all linters (eslint, stylelint, hint). For Lighthouse, either user chromium based browsers or run a live server and use its user on this command: `npx lighthouse <URL>`.
+
 ## Authors
 
 👤 **Mostafa Ahangarha**
