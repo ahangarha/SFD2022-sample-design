@@ -96,14 +96,15 @@ header #menu-toggler svg {
 
 .section-heading {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
   padding-bottom: 1rem;
   color: var(--primary);
+  text-align: center;
 }
 
 .section-heading::after {
-  border-bottom: 1px solid var(--secondary);
+  border-bottom: 2  px solid var(--secondary);
   position: absolute;
   height: 1px;
   width: 3rem;
@@ -173,4 +174,96 @@ header #menu-toggler svg {
   font-size: 1.5rem;
   font-weight: 600;
   align-self: center;
+}
+
+#speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--primary);
+  padding: 2rem 1rem;
+}
+
+#speakers .persons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#speakers .person {
+  display: flex;
+  gap: 1rem;
+}
+
+#speakers .person-graphic {
+  position: relative;
+}
+
+#speakers .person-graphic::before {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  width: 2rem;
+  height: 2rem;
+  content: ' ';
+  border-top: 2px solid var(--nutral);
+  border-inline-start: 2px solid var(--nutral);
+}
+
+#speakers .person img {
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--secondary);
+  margin-top: 0.5rem;
+  margin-inline-start: 0.5rem;
+  flex-shrink: 0;
+}
+
+#speakers .person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#speakers .person-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#speakers .person-title {
+  color: var(--secondary);
+  padding-bottom: 0.75rem;
+  position: relative;
+}
+
+#speakers .person-title::after {
+  border-bottom: 2px solid var(--nutral);
+  position: absolute;
+  height: 1px;
+  width: 1rem;
+  content: '';
+  bottom: 0;
+  inset-inline-start: 0;
+}
+
+#speakers .person-bio {
+  color: var(--primary);
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+#speakers .more {
+  border: 1px solid var(--nutral);
+  border-radius: 0.25rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 0.5rem;
+}
+
+#speakers .more svg {
+  height: 1.5rem;
+  color: var(--secondary)
 }
