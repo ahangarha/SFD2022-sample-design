@@ -104,7 +104,7 @@ header #menu-toggler svg {
 }
 
 .section-heading::after {
-  border-bottom: 2  px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
   position: absolute;
   height: 1px;
   width: 3rem;
@@ -266,4 +266,26 @@ header #menu-toggler svg {
 #speakers .more svg {
   height: 1.5rem;
   color: var(--secondary)
+}
+
+#sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #333;
+  color: var(--nutral);
+  padding: 2rem 1rem;
+}
+
+#sponsors .section-heading {
+  color: var(--nutral);
+}
+
+#sponsors .sponsors-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1rem;
 }
