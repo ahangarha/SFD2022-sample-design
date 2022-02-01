@@ -10,6 +10,10 @@
   --serif-font: "Lato", "serif";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -89,6 +93,16 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  position: relative;
+  z-index: 0;
+}
+
+#hero .shape-set {
+  position: absolute;
+  z-index: -1;
+  bottom: -6rem;
+  inset-inline-end: 0;
+  width: 65%;
 }
 
 #hero h1,
@@ -313,14 +327,27 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
-  gap: 1rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+#sponsors .sponsors-list img {
+  opacity: 0.25;
+  transition: opacity 300ms;
+}
+
+#sponsors .sponsors-list img:hover {
+  opacity: 0.75;
 }
 
 footer {
+  padding: 3rem 2rem;
+}
+
+footer .wrapper.wrapper {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 3rem 2rem;
 }
 
 footer .branding {
@@ -393,6 +420,12 @@ footer .branding {
 
   #hero {
     padding-top: 12rem;
+  }
+
+  #hero .shape-set {
+    top: 55%;
+    inset-inline-start: 28rem;
+    width: auto;
   }
 
   #hero h1 {
