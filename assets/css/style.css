@@ -61,9 +61,45 @@ header {
   z-index: 9;
 }
 
-#logo,
-header nav {
+#logo {
   display: none;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  background: #272a31f7;
+  font-size: 2.5rem;
+  transform: translateX(-100%);
+  transition: transform 300ms;
+}
+
+header nav.show {
+  display: flex;
+  transform: translateX(0%);
+}
+
+#menu-close-btn {
+  color: white;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 3rem;
+  align-self: start;
+  display: block;
+  padding: 1rem;
+  width: 5rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  user-select: none;
+}
+
+header nav a {
+  color: var(--nutral);
+  border-bottom: 1px solid #fff1;
+  padding: 1.5rem 3rem;
+  font-weight: 300;
 }
 
 header #menu-toggler {
@@ -392,8 +428,17 @@ footer .branding {
     font-weight: 200;
   }
 
-  header .nav-bar nav {
+  header nav {
     display: flex;
+    flex-direction: row;
+    background: none;
+    position: unset;
+    font-size: 1rem;
+    transform: translateX(0%);
+  }
+
+  #menu-close-btn {
+    display: none;
   }
 
   header .nav-bar nav a {
