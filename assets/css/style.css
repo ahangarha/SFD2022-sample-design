@@ -81,7 +81,7 @@ section {
 }
 
 #hero {
-  background-color: #f7f7f7;
+  background: #f7f7f7 url(../img/sfd2022-group-photo-bg.jpg) top center no-repeat;
   padding: 7rem 1rem;
 }
 
