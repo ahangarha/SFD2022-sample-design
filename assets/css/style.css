@@ -59,13 +59,36 @@ h1 {
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   color: var(--primary);
   position: fixed;
   top: 0;
   inset-inline: 0;
   z-index: 9;
+}
+
+#secondary-nav-bar {
+  background: var(--primary);
+  font-size: 0.9rem;
+}
+
+#secondary-nav-bar .wrapper {
+  display: none;
+}
+
+#secondary-nav-bar a {
+  color: var(--nutral);
+  padding: 0.25rem;
+}
+
+#secondary-nav-bar a:hover {
+  color: white;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
@@ -103,14 +126,14 @@ header nav.show {
   user-select: none;
 }
 
-header nav a {
+#nav-bar #menu a {
   color: var(--nutral);
   border-bottom: 1px solid #fff1;
   padding: 1.5rem 3rem;
   font-weight: 300;
 }
 
-header .nav-bar nav a.active {
+#nav-bar #menu a.active {
   color: var(--secondary-dark);
 }
 
@@ -121,6 +144,8 @@ header #menu-toggler {
   align-items: center;
   background-color: white;
   border-end-end-radius: 1rem;
+  justify-self: start;
+  flex-grow: 0;
 }
 
 header #menu-toggler svg {
@@ -553,13 +578,21 @@ footer .branding {
   header {
     background-color: white;
     box-shadow: 0 0.2rem 1rem #0003;
+    flex-direction: column;
+  }
+
+  #secondary-nav-bar .wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   header #menu-toggler {
     display: none;
   }
 
-  header .nav-bar {
+  #nav-bar {
     width: 100%;
     max-width: 992px;
     display: flex;
@@ -581,7 +614,7 @@ footer .branding {
     font-weight: 200;
   }
 
-  header nav {
+  #menu {
     display: flex;
     flex-direction: row;
     background: none;
@@ -594,7 +627,7 @@ footer .branding {
     display: none;
   }
 
-  header .nav-bar nav a {
+  #nav-bar #menu a {
     padding: 2rem 1rem;
     display: flex;
     justify-content: center;
@@ -604,11 +637,11 @@ footer .branding {
     transition: color 300ms;
   }
 
-  header .nav-bar nav a.home-link {
+  #nav-bar #menu a.home-link {
     display: none;
   }
 
-  header .nav-bar nav a:hover {
+  #nav-bar #menu a:hover {
     color: var(--nutral-darker);
   }
 
