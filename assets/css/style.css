@@ -79,6 +79,7 @@ header nav {
   font-size: 2.5rem;
   transform: translateX(-100%);
   transition: transform 300ms;
+  overflow-y: auto;
 }
 
 header nav.show {
