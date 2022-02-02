@@ -6,6 +6,7 @@ const closeMenuBtn = document.getElementById('menu-close-btn');
 
 function toggleMenu(event, prevent = true) {
   if (prevent) event.preventDefault();
+  document.body.classList.toggle('no-scroll');
   menu.classList.toggle('show');
 }
 
