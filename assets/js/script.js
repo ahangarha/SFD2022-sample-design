@@ -1,14 +1,23 @@
 // toggle mobile menu
 const menu = document.getElementById('menu');
+const menuLinks = document.querySelectorAll('#menu a');
 const menuToggler = document.getElementById('menu-toggler');
 const closeMenuBtn = document.getElementById('menu-close-btn');
 
-menuToggler.addEventListener('click', (event) => {
-  event.preventDefault();
+function toggleMenu(event, prevent = true) {
+  if (prevent) event.preventDefault();
   menu.classList.toggle('show');
+}
+
+menuToggler.addEventListener('click', (event) => {
+  toggleMenu(event);
 });
 
 closeMenuBtn.addEventListener('click', (event) => {
-  event.preventDefault();
-  menu.classList.toggle('show');
+  toggleMenu(event);
 });
+
+menuLinks.forEach((link) => link.addEventListener(
+  'click',
+  (event) => toggleMenu(event, false),
+));
