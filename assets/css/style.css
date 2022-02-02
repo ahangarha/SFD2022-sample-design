@@ -516,6 +516,13 @@ footer .branding {
   object-position: center center;
   width: 100%;
   height: 100%;
+  transform: scale(1.05);
+  transition: 400ms ease-in-out;
+}
+
+#otherSfd .other-programs .program:hover img {
+  transform: scale(1);
+  filter: blur(0.15rem);
 }
 
 #otherSfd .other-programs .cover {
