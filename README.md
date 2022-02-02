@@ -4,6 +4,10 @@
 
 Sample Design of Imaginaty Software Freedom Day 2022 event
 
+## Screensot
+
+![screenshot](screenshot.png)
+
 ## live Demo
 
 Check the [live demo](https://ahangarha.github.io/SFD2022-sample-design/) deployed on github pages.
