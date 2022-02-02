@@ -572,6 +572,10 @@ footer .branding {
     transition: color 300ms;
   }
 
+  header .nav-bar nav a.home-link {
+    display: none;
+  }
+
   header .nav-bar nav a:hover {
     color: var(--primary);
   }
