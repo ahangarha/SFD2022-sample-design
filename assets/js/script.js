@@ -35,19 +35,19 @@ const speakers = [
     name: 'Hanna',
     title: 'Digital Painter',
     image: 'person2.jpg',
-    bio: 'some bio',
+    bio: 'I use Krita for my creative art works. I help others to do the same.',
   },
   {
     name: 'Reza',
     title: 'Lawer',
     image: 'person3.jpg',
-    bio: 'some other bio',
+    bio: 'I help individuals and companies to make sure noboby violate GPL licenses',
   },
   {
     name: 'Shirin',
     title: 'Laravel Developer',
     image: 'person4.jpg',
-    bio: 'some other bio',
+    bio: 'We deserve more that being merely operator of proprietary software.',
   },
 ];
 
