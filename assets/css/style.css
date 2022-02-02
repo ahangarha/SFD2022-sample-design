@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700 &display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --primary: #272a31;
@@ -156,6 +156,10 @@ section {
 #hero h1,
 #hero h2 {
   color: var(--secondary);
+}
+
+#hero h1 {
+  font-weight: 700;
 }
 
 #hero h2 {
@@ -363,7 +367,7 @@ section {
 
 #speakers .person-title {
   color: var(--secondary-dark);
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 0.75rem;
   position: relative;
 }
