@@ -23,7 +23,7 @@ html {
 }
 
 .no-scroll {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .container > * {
@@ -534,6 +534,10 @@ footer .branding {
 }
 
 @media (min-width: 768px) {
+  .no-scroll {
+    overflow-y: auto;
+  }
+
   header {
     background-color: white;
     box-shadow: 0 0.2rem 1rem #0003;
