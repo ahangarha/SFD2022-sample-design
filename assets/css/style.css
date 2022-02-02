@@ -160,6 +160,7 @@ section {
 
 #hero h1 {
   font-weight: 700;
+  text-shadow: 0.03em 0.03em 0.02em #0009;
 }
 
 #hero h2 {
