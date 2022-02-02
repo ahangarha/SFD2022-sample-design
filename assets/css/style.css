@@ -318,6 +318,10 @@ section {
   gap: 1rem;
 }
 
+#speakers .person.mobile-hide {
+  display: none;
+}
+
 #speakers .person-graphic {
   position: relative;
 }
@@ -646,6 +650,14 @@ footer .branding {
 
   #speakers .person {
     flex-basis: calc(50% - 2rem);
+  }
+
+  #speakers .person.mobile-hide {
+    display: flex;
+  }
+
+  #speakers .more {
+    display: none;
   }
 
   #hero-about {

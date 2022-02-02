@@ -53,9 +53,9 @@ const speakers = [
 
 const speakersPlaceHolder = document.querySelector('#speakers .persons');
 
-speakers.forEach((speaker) => {
+speakers.forEach((speaker, index) => {
   speakersPlaceHolder.innerHTML += `
-  <div class="person">
+  <div class="person ${index > 1 ? 'mobile-hide' : ''}">
     <div class="person-graphic">
       <img src="./assets/img/${speaker.image}" alt="" />
     </div>
@@ -67,3 +67,16 @@ speakers.forEach((speaker) => {
   </div>
   `;
 });
+
+// Show more speackers by clicking on more button
+const moreSpeakerButton = document.getElementById('toggle-more-speakers');
+moreSpeakerButton.addEventListener(
+  'click',
+  (event) => {
+    event.preventDefault();
+    document.querySelectorAll('.mobile-hide').forEach((el) => {
+      el.classList.toggle('mobile-hide');
+    });
+    moreSpeakerButton.style.display = 'none';
+  },
+);
