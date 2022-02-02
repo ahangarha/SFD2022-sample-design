@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,800&family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700 &display=swap');
 
 :root {
   --primary: #272a31;
   --secondary: #ec5242;
-  --secondary-dark: #ad392c;
+  --secondary-dark: #cc4030;
+  --secondary-darker: #9e2a1d;
   --nutral: #d3d3d3;
   --nutral-darker: #999;
   --text-color: #5b5b5b;
@@ -39,6 +40,7 @@ body {
   font-size: 16px;
   font-family: var(--serif-font);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 h1,
@@ -106,6 +108,10 @@ header nav a {
   border-bottom: 1px solid #fff1;
   padding: 1.5rem 3rem;
   font-weight: 300;
+}
+
+header .nav-bar nav a.active {
+  color: var(--secondary-dark);
 }
 
 header #menu-toggler {
@@ -356,7 +362,8 @@ section {
 }
 
 #speakers .person-title {
-  color: var(--secondary);
+  color: var(--secondary-dark);
+  font-weight: 600;
   padding-bottom: 0.75rem;
   position: relative;
 }
@@ -511,7 +518,7 @@ footer .branding {
   position: absolute;
   inset: 0;
   mix-blend-mode: multiply;
-  background-color: var(--secondary-dark);
+  background-color: var(--secondary-darker);
 }
 
 #otherSfd .other-programs .program h3 {
@@ -577,7 +584,7 @@ footer .branding {
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    color: var(--nutral-darker);
+    color: var(--primary);
     transition: color 300ms;
   }
 
@@ -586,11 +593,7 @@ footer .branding {
   }
 
   header .nav-bar nav a:hover {
-    color: var(--primary);
-  }
-
-  header .nav-bar nav a.active {
-    color: var(--secondary);
+    color: var(--nutral-darker);
   }
 
   section {
